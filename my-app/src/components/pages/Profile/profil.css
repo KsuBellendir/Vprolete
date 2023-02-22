@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+.bodyform{
+  display: flex;
+  background-color: #aeb2b3;
+  padding: 20px;
+  font-size: 30pt;
+ 
+/*   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+   */
+  
+  
+}
+.imgv {
+    width: 70%;
+    height: 60%;
+
+}
+.container{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: repeat(9, 9fr);
+  background: #fffdee;
+  width: 70%;
+  height: 100%;
+  margin: 5px auto 0; 
+  padding: 20px; 
+  border: 10px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg, #2023c4, #20a3c4 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px, transparent 30px, transparent 40px);
+  font-family: 'Playfair Display';
+  color: #605756;
+  position: relative;
+  left: -15%;
+  row-gap: 25px;
+  align-items:center;
+  transform: scale(0);
+}
+.container.active{
+  transform: scale(1);
+
+}
+.form-row {
+  margin-bottom: 5px;
+}
+.form-row-input{
+  grid-column: 2/3;
+  
+  padding: 0 15px;
+  line-height: 25px;
+  outline: none;
+   background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x; 
+  background-size: 8px 5px;
+  font-family: 'Playfair Display';
+ 
+}
+.form-row-label{
+  grid-column: 1/2;
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  background-attachment: local;
+  background-repeat: repeat;
+  resize: none;
+
+}
+.form-row-submit{
+  grid-column: 2/3;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #8899fc;
+  border-width: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Playfair Display';
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fffdee;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.form-row-input:hover {
+  outline: 0;
+  border-color: #F77A52;
+}
+.stena-profil{
+  animation: hue-rotate 6s infinite;
+  width:40%;
+  height: auto;
+  background-size: cover;
+
+  top: 200%; /* Stay at the top */
+  left: -5%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+
+.form-row-submit:hover {
+  background: #C42061;
+}
+.btn-red{
+  width: 175px;
+  height: 55px;
+
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #f5f5f5;
+  border-width: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Playfair Display';
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #0e0e0e;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1); 
+}
+.btn-red:hover{
+  background: #f8020f;
+}
+.h6-stena{
+  margin: 15px;
+  align-items: left;
+ 
+}
